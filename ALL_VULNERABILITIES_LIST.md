@@ -41,6 +41,8 @@ Based on comprehensive analysis of the Claude Code conversation log and security
 33. VUL-033-instruction-replay-attacks
 34. VUL-034-flash-loan-manipulation-attacks
 35. VUL-035-quantum-resistance-failures
+96. VUL-096-private-keys-exposed
+98. VUL-098-session-hijacking-chain
 
 ### ⚠️ High Severity Vulnerabilities (CVSS 7.0-8.9)
 
@@ -110,21 +112,19 @@ Based on comprehensive analysis of the Claude Code conversation log and security
 
 ### 💡 Low Severity Vulnerabilities (CVSS 0.1-3.9)
 
-96. VUL-096-private-keys-exposed
-97. VUL-097-hardcoded-test-accounts
-98. VUL-098-session-hijacking-chain
-99. VUL-099-vault-resurrection-attack
-100. VUL-100-double-spend-state-rollback
-101. VUL-101-kill-death-ratio-manipulation
-102. VUL-102-phantom-player-attack
-103. VUL-103-transaction-malleability
-104. VUL-104-cross-session-fund-transfer
-105. VUL-105-recursive-state-corruption
-106. VUL-106-composite-attack-chains
-107. VUL-107-advanced-timing-attacks
-108. VUL-108-cryptographic-weaknesses
-109. VUL-109-protocol-downgrade-attacks
-110. VUL-110-side-channel-information-leaks
+97. VUL-097-weak-random-number-generation
+99. VUL-099-sql-injection-vulnerabilities
+100. VUL-100-cross-site-scripting-potential
+101. VUL-101-information-disclosure-error-messages
+102. VUL-102-insufficient-rate-limiting
+103. VUL-103-weak-password-policies
+104. VUL-104-missing-input-sanitization
+105. VUL-105-insecure-direct-object-references
+106. VUL-106-directory-traversal-risks
+107. VUL-107-weak-encryption-algorithms
+108. VUL-108-missing-security-headers
+109. VUL-109-improper-certificate-validation
+110. VUL-110-insufficient-logging-security-events
 
 ### ℹ️ Informational Vulnerabilities (Best Practices)
 
@@ -133,29 +133,29 @@ Based on comprehensive analysis of the Claude Code conversation log and security
 113. VUL-113-missing-function-visibility-modifiers
 114. VUL-114-unused-import-statements
 115. VUL-115-missing-constant-declarations
-116. VUL-116-suboptimal-function-ordering
-117. VUL-117-missing-license-headers
-118. VUL-118-inconsistent-code-formatting
-119. VUL-119-missing-version-pragmas
-120. VUL-120-inadequate-access-control-documentation
+116. VUL-116-suboptimal-algorithm-choices
+117. VUL-117-missing-performance-benchmarks
+118. VUL-118-inconsistent-error-message-formats
+119. VUL-119-missing-api-versioning-strategy
+120. VUL-120-inadequate-code-organization
 
 ### 🔬 Advanced/Theoretical Vulnerabilities
 
 121. VUL-121-quantum-computing-resistance
-122. VUL-122-advanced-cryptanalysis-vulnerabilities
-123. VUL-123-zero-knowledge-proof-weaknesses
-124. VUL-124-post-quantum-signature-schemes
-125. VUL-125-distributed-consensus-attacks
+122. VUL-122-advanced-persistent-threat-vectors
+123. VUL-123-side-channel-attack-vulnerabilities
+124. VUL-124-economic-model-exploitation-theories
+125. VUL-125-future-scalability-limitations
 
 ---
 
 ## Summary Statistics
 
 - **Total Vulnerabilities**: 125
-- **Critical (9.0-10.0)**: 35 vulnerabilities
+- **Critical (9.0-10.0)**: 37 vulnerabilities
 - **High (7.0-8.9)**: 40 vulnerabilities
 - **Medium (4.0-6.9)**: 20 vulnerabilities
-- **Low (0.1-3.9)**: 15 vulnerabilities
+- **Low (0.1-3.9)**: 13 vulnerabilities
 - **Informational**: 10 vulnerabilities
 - **Advanced/Theoretical**: 5 vulnerabilities
 
