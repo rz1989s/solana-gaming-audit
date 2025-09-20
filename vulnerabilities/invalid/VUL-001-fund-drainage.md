@@ -1,13 +1,33 @@
-# VUL-001: Fund Drainage in Team Games
+# VUL-001: Fund Drainage in Team Games [INVALID]
 
-## 🚨 Critical Vulnerability Summary
+## ❌ INVALID VULNERABILITY - FALSE POSITIVE
 
 **Vulnerability ID**: VUL-001
-**CVSS Score**: 9.8/10.0 (Critical)
-**CVSS Vector**: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H
+**CVSS Score**: N/A (Invalid)
+**CVSS Vector**: N/A
 **Discovery Date**: 2025-09-18
-**Status**: Confirmed
+**Status**: INVALID - FALSE POSITIVE
+**Invalidated Date**: 2025-09-20
 **Reporter**: RECTOR
+**Validator**: RECTOR
+
+## 🔍 Why This Was Marked Invalid
+
+**Initial Claim**: Team games pay out more funds than available in vault due to incorrect winning amount calculation.
+
+**Reality**: The mathematical calculation is actually correct. Our initial analysis was flawed.
+
+### Correct Mathematical Analysis
+```
+5v5 Game Example:
+- Vault contains: 10 players × 100 tokens = 1,000 tokens
+- Each winner gets: session_bet × 2 = 100 × 2 = 200 tokens
+- Total payout: 5 winners × 200 tokens = 1,000 tokens
+- Vault balance after: 1,000 - 1,000 = 0 tokens ✅ CORRECT
+```
+
+### What We Got Wrong
+We initially thought winners should split the total pot equally, but the game design treats team games as parallel individual wagers where each player's bet is matched by the losing team.
 
 ## 📍 Location & Scope
 

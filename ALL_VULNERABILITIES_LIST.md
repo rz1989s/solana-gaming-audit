@@ -1,16 +1,19 @@
-# Complete Vulnerability List (VUL-001 to VUL-125)
+# Complete Vulnerability List - 124 Valid + 1 Invalid
 
 ## Solana Gaming Protocol Security Audit - Complete Findings
 
-Based on comprehensive analysis of the Claude Code conversation log and security audit findings:
+Based on comprehensive analysis and source code validation:
 
-### 🚨 Critical Vulnerabilities (CVSS 9.0-10.0)
+### ❌ Invalid Vulnerabilities (False Positives)
+1. **VUL-001-fund-drainage** [INVALID] - Mathematical analysis showed calculation is actually correct
 
-1. VUL-001-fund-drainage
-2. VUL-002-pay2spawn-earnings-exploit
-3. VUL-003-multiple-refund-attack
-4. VUL-004-spawn-underflow-panic
-5. VUL-005-game-state-corruption
+### 🚨 Critical Vulnerabilities (34 findings, CVSS 9.0-10.0)
+
+1. **VUL-002-pay2spawn-earnings-exploit** ✅ **PoC COMPLETE**
+2. **VUL-003-multiple-refund-attack** ✅ **PoC COMPLETE**
+3. **VUL-004-spawn-underflow-panic** ✅ **PoC COMPLETE**
+4. **VUL-005-game-state-corruption** ✅ **PoC COMPLETE**
+5. VUL-006-centralized-authority-risk
 6. VUL-006-centralized-authority-risk
 7. VUL-007-authority-bypass
 8. VUL-008-session-id-collision
