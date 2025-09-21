@@ -322,6 +322,16 @@ pub fn exploit_initialization_replay() -> Result<()> {
 
 ## Proof of Concept
 
+✅ **PROOF OF CONCEPT COMPLETED**
+📁 **Location**: `/src/tests/vuln-033-instruction-replay-poc.rs`
+🎯 **Status**: CRITICAL replay vulnerabilities demonstrated with working exploits
+
+### Validated Vulnerabilities in Source Code:
+1. **distribute_pay_spawn_earnings()** - NO status check, can be replayed indefinitely
+2. **distribute_all_winnings_handler()** - Status set to Completed AFTER token transfer
+3. **Missing nonce/replay protection** throughout the protocol
+4. **Cross-session replay potential** - Same transaction can work across multiple sessions
+
 ### Complete Replay Attack Framework
 
 ```rust

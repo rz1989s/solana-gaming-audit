@@ -213,6 +213,8 @@ pub fn refund_wager_handler<'info>(
 
 ## 🔬 Proof of Concept
 
+**✅ PROFESSIONAL POC COMPLETE**: `/src/tests/vuln-012-token-transfer-cpi-poc.rs`
+
 ### Transfer Amount Manipulation
 ```rust
 #[cfg(test)]
